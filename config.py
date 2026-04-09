@@ -12,6 +12,13 @@ LLM_MODEL = "gpt-4o-mini"
 LLM_TEMPERATURE = 0.0
 
 RETRIEVER_TOP_K = 5
+BM25_TOP_K = 5
+
+# Trọng số hybrid search: [BM25, Dense]  — tổng = 1.0
+BM25_WEIGHT = 0.4
+DENSE_WEIGHT = 0.6
+
+CHUNKS_PATH = BASE_DIR / "chroma_db" / "chunks.pkl"
 
 SYSTEM_PROMPT = """Bạn là trợ lý AI chuyên về chính sách của ứng dụng XanhSM dành cho tài xế.
 Hãy trả lời câu hỏi dựa trên ngữ cảnh được cung cấp bên dưới.
