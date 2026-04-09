@@ -7,8 +7,17 @@ CHROMA_DIR = BASE_DIR / "chroma_db"
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 
+# Provider: "openai" | "gemini"
+EMBEDDING_PROVIDER = "openai"
+LLM_PROVIDER = "openai"
+
+# OpenAI defaults
 EMBEDDING_MODEL = "text-embedding-3-small"
 LLM_MODEL = "gpt-4o-mini"
+
+# Gemini defaults (chỉ dùng khi *_PROVIDER = "gemini")
+GEMINI_EMBEDDING_MODEL = "text-embedding-004"
+GEMINI_LLM_MODEL = "gemini-2.0-flash"
 LLM_TEMPERATURE = 0.0
 
 RETRIEVER_TOP_K = 5

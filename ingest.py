@@ -15,7 +15,7 @@ load_dotenv()
 
 from config import (
     DATA_DIR, CHROMA_DIR, CHUNK_SIZE, CHUNK_OVERLAP,
-    EMBEDDING_MODEL, CHUNKS_PATH,
+    CHUNKS_PATH,
 )
 from src.document_loader import load_documents
 from src.text_splitter import split_documents
@@ -33,7 +33,7 @@ def main():
     chunks = split_documents(documents, CHUNK_SIZE, CHUNK_OVERLAP)
 
     print("\n[3/5] Initializing embedding model...")
-    embedding_model = get_embedding_model(EMBEDDING_MODEL)
+    embedding_model = get_embedding_model()
 
     print("\n[4/5] Creating vector store...")
     create_vector_store(chunks, embedding_model, CHROMA_DIR)
