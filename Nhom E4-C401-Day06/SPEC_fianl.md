@@ -1,6 +1,6 @@
 # SPEC - AI Product Hackathon
 
-**Nhóm:** D3_C401
+**Nhóm:** E4_C401
 **Track:** ☐ VinFast · ☐ Vinmec · ☐ VinUni-VinSchool · ☑ XanhSM · ☐ Open
 **Problem statement (1 câu):** *Tài xế XanhSM hiện gặp khó khăn hỏi đáp vấn đề về chính sách, thu nhập thông qua chatbot*
 
